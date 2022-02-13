@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".p2_settings">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="24dp"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="355dp"
+            android:layout_height="51dp"
+            android:gravity="center_horizontal"
+            android:text="SETTINGS"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorAccent"
+            android:textColorLink="#000" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Currency"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#000" />
+
+        <Spinner
+            android:id="@+id/p2_currency"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:text="PIN protection"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#000" />
+
+        <Spinner
+            android:id="@+id/p2_pin"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Enter the current PIN to edit it."
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/settings_oldPin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Reqd. only if you edit the PIN"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Enter a new PIN"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/settings_newPin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Reqd. only if you edit the PIN"
+            android:inputType="textPassword" />
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/p2_apply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="4"
+                android:layout_weight="1"
+                android:text="Apply" />
+
+            <Button
+                android:id="@+id/changePin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="4"
+                android:layout_weight="1"
+                android:text="Change Pin" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/goToCategory"
+            android:layout_width="168dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="122dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="122dp"
+            android:text="Edit Categories"
+            app:layout_constraintTop_toBottomOf="@+id/p2_apply" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Watch</string>
+    <string name="category">Category</string>
+    <string name="date">Date</string>
+    <string name="amount">Amount</string>
+
+
+    <string-array name="pin">
+        <item>ON</item>
+        <item>OFF</item>
+    </string-array>
+
+    <string-array name="currency">
+        <item>EUR</item>
+        <item>INR</item>
+        <item>USD</item>
+        <item>GBP</item>
+        <item>AED</item>
+    </string-array>
+
+    <string-array name="transaction">
+        <item>Not</item>
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Yearly</item>
+    </string-array>
+
+    mop
+    <string-array name="mop">
+        <item>Cash</item>
+        <item>Card</item>
+    </string-array>
+    <string name="selectedCurrency">EUR</string>
+    <string name="selectedPIN">OFF</string>
+    <string name="PIN">1234</string>
+
+
+</resources>
